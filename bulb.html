@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>lets learn javascript</title>
+<script type="text/javascript">
+function change(){
+	document.getElementById('bulb').style.width='160px';
+}
+function dchange(){
+	document.getElementById('bulb').style.width='90px';
+	}
+function borderchange(){
+	document.getElementById('bulb').style.border='3px solid red';	
+}
+function borderremove(){
+	document.getElementById('bulb').style.border='none';	
+}
+</script>
+<body>
+	<button onclick="change()">increasing size</button>
+	<button onclick="document.getElementById('bulb').src='on.png'">on</button>
+	<img id="bulb" src="off1.png" height="170px" >
+<button onclick="document.getElementById('bulb').src='off1.png'">off</button>
+
+	<button onclick="dchange()">decreasing size</button>
+	 <button onclick="borderchange()">apply border</button>
+	 	 <button onclick="borderremove()">remove border</button>
+</body>
+</html>
